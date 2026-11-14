@@ -479,3 +479,65 @@ No license file is currently included in this repository.
 GitHub: [@SubhankarPani](https://github.com/SubhankarPani)
 
 Project: [SmartBite — AI-Powered Diet Planner](https://github.com/SubhankarPani/SmartBite-Ai-Powered-Diet-Planner)
+
+## 📊 Model Performance
+
+The XGBoost classification model was evaluated on a test dataset containing **72,000 samples**.
+
+### Classification Report
+
+| Metric | Class 0 | Class 1 |
+|---|---:|---:|
+| Precision | 0.88 | 0.95 |
+| Recall | 0.99 | 0.43 |
+| F1-Score | 0.94 | 0.59 |
+| Support | 58,526 | 13,474 |
+
+**Overall Performance:**
+- Accuracy: **89%**
+- Macro F1-Score: **0.76**
+- Weighted F1-Score: **0.87**
+- Test Samples: **72,000**
+
+### Confusion Matrix
+
+```text
+[[58194   332]
+ [ 7744  5730]]
+```
+
+## 🥗 Sample 7-Day Meal Plan Output
+
+**Patient Profile:**
+- Patient: Subhankar Pani
+- BMI: 28.69 (Overweight)
+- Maintenance Calories: 2,671 kcal/day
+
+**Sample Meal Recommendations**
+
+| Day | Meal | Recommended Food | Quantity | Calories |
+|---|---|---|---:|---:|
+| Day 1 | Breakfast | Spinach Soup | 167g | 936 kcal |
+| Day 1 | Lunch | Sattu Drink | 175g | 802 kcal |
+| Day 1 | Snack | Rajma Chawal | 48g | 268 kcal |
+| Day 1 | Dinner | Karela Sabzi | 127g | 668 kcal |
+| Day 2 | Breakfast | Paneer Tikka | 197g | 936 kcal |
+| Day 2 | Lunch | Cauliflower Curry with Roti | 363g | 802 kcal |
+| Day 2 | Snack | Pav Bhaji | 69g | 268 kcal |
+| Day 2 | Dinner | Kadhi Bari | 304g | 668 kcal |
+
+**Daily Calorie Summary:**
+- Day 1: 2,674 kcal
+- Day 2: 2,674 kcal
+- Day 3: 2,674 kcal
+- Day 7: 2,682 kcal
+
+*The application generates four meals per day across a personalized seven-day meal plan.*
+
+## 🧾 Supported Personalization Categories
+
+**Food Allergies:** Eggs, Gluten, Lactose (Dairy), Peanuts, Shellfish, Soy, Tree Nuts.
+
+**Nutritional Deficiencies:** Calcium, Folate (Vitamin B9), Iron, Magnesium, Protein, Vitamin B12, Vitamin D, Zinc.
+
+**Medical Conditions:** Diabetes, Fatty Liver, Gastritis, Heart Disease, High Cholesterol, Hypertension, Hypothyroidism, Kidney Disease, Obesity, PCOS/PCOD.
